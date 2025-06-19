@@ -198,27 +198,40 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
 
 .hero-section {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin: 0 auto;
 }
+@media screen and (min-resolution: 2x) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-mobile2x.jpg);
+    }
+}
+
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px;
+    line-height: 1.07; */
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
-    margin: 0 auto 48px auto;
+    /* max-width: 496px; */
+    max-width: 216px;
+    margin: 0 auto 72px auto;
 }
 
 .hero-button {
@@ -757,6 +770,30 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
         max-width: 768px;
     }
 
+
+    .hero-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tablet.jpg);
+    }
+    @media screen and (min-resolution: 2x) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-tablet2x.jpg);
+        }       
+    }
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin: 0 auto 36px auto;
+        max-width: 496px;
+    }
+
+
+
     .features-list {
         row-gap: 72px;
         column-gap: 24px;
@@ -800,6 +837,27 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
         padding-left: 15px;
         padding-right: 15px;
     }
+
+
+    .hero-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+    }
+    @media screen and (min-resolution: 2x) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/people-office2x.jpg);
+        }
+    }
+    .hero-title {
+        margin: 0 auto 48px auto;
+    }
+
+
     .features-list .features-list-item {
         flex-basis: calc((100% - 72px) / 4);
     }
